@@ -1,0 +1,76 @@
+    ##################
+    Install Docker in Ubuntu 20.04
+    ###################
+    1  apt update
+    2  apt install docker
+    3  docker run hello-world
+    4  apt install docker.io
+    ############
+    Test Docker installation
+    #######################
+    5  docker run hello-world
+    #############
+    Check Docker Images in local system
+    ##########################
+    6  docker images
+    #############
+    run some smple images 
+    ##############
+    
+    7  docker pull ubuntu
+    8  docker images
+    9  docker pull nginx
+   10  docker images
+   11  docker run -p 80:80 nginx
+    
+    
+    
+    
+   #################################
+   Build Azure sample pp
+   ################################  
+    
+    
+    
+    1  docker images
+    2  docker ps -a
+    3  mkdir project
+    4  cd project
+    5  git clone https://github.com/Azure-Samples/azure-voting-app-redis.git
+    6  ls -la
+    7  cd azure-voting-app-redis/
+    8  ls -l
+    9  cat docker-compose.yaml 
+   10  docker-compose up -d
+   11  apt install docker-compose
+   12  docker-compose up -d
+   13  docker images
+   
+   ##########################
+   Build Custom Docker Images
+   #############################
+   
+   14  ls -l
+   15  cd ..
+   16  mkdir /project1
+   17  cd /project1/
+   18  ls -la
+   19  code app.py
+   20  gtt clone https://github.com/devclass1/docker.git
+   21  git clone https://github.com/devclass1/docker.git
+   22  ls -la
+   23  cd docker
+   24  ls -la
+   25  docker images
+   26  docker build -t myapp .
+   27  docker images 
+   28  service docker restart
+   29  docker run -p 80:80 myapp
+   30  cd ..
+   31  rm -rf /project1/
+   32  ls -l  /
+   33  docker images
+   
+   #################
+   To clear resources in Azure Portal Delete Resource Group
+   #################
